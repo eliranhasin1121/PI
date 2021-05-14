@@ -1,21 +1,22 @@
 import React from 'react';
-import AboutIcon from '../../assets/About.png'
+import AboutIcon from '../../assets/about-logo.png'
 import PhilosophyIcon from '../../assets/Philosophy.png';
 import { StyledAbout,  StyledAboutImgSection , 
-    StyledAboutTextSection , StyledAboutText , SyledPhilosophy } from './StyledAbout';
+    StyledAboutTextSection , StyledAboutText , SyledPhilosophy,Image,TextWrapper,Text,MainText } from './StyledAbout';
+    import sectionB from '../../assets/sectionB.png'
 
 const About = () => {
     return (
         <div>
             <section>
                 <StyledAbout className="row">
-                    <StyledAboutImgSection className="col-6 col-12-medium">
-                        <img class="image featured" src={AboutIcon}></img>
+                    <StyledAboutImgSection className="col-6 col-12-small">
+                        <img class="image featured" src={AboutIcon}/>
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-medium">
                         <StyledAboutText>
-                            PI EM is an absolute return macro volatility hedge fund focused primarily on emerging market currencies and sovereign debt.
+                        Pi is an absolute return macro volatility hedge fund focused primarily on emerging market currencies and sovereign debt.
                         </StyledAboutText>
                     </StyledAboutTextSection>
                 </StyledAbout>
@@ -23,12 +24,17 @@ const About = () => {
 
             <section>
                 <StyledAbout className="row">
-                <div >
-                    <img class="image featured" src={PhilosophyIcon}></img>
+                <div>
+                    <Image className="image featured" src={sectionB}/>
                     <SyledPhilosophy>
-                        <h3>OUR PHILOSOPHY</h3>
-                        <span>We view risk-management as a fundamental tool in structuring each trade as well as our entire portfolio rather than merely an overlay to the portfolio. A conservative approach to risk assessment and management is at the core of the fund’s activities.</span>
-                        <span>The perpetual development of screening and pricing models allows the investment team to continually take advantage of market inefficiencies.</span>
+                      <TextWrapper>
+                      <MainText>Ahron Cohen</MainText>
+                      <Text>
+                      Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
+                      Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
+                      Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
+                      </Text>
+                      </TextWrapper>
                     </SyledPhilosophy>
                 </div>
                 </StyledAbout>

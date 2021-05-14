@@ -2,12 +2,19 @@ import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
     height: 740px;
+    position:relative;
+    color:white;
+    height:100%;
 `
 
 
 export const StyledAboutImgSection = styled.div`
     display: flex;
     align-items: center;
+`
+
+export const Image = styled.img`
+width:100%;
 `
 
 export const StyledAboutTextSection = styled.div`
@@ -17,13 +24,34 @@ export const StyledAboutTextSection = styled.div`
 
 
 export const StyledAboutText = styled.p`
-    font-family: Helvetica;
     font-size: 40px;
     color: #000000;
     line-height: 1;
     text-align: center;
 `
 
-export const SyledPhilosophy = styled.p`
-    text-align: center;
+export const SyledPhilosophy = styled.div`
+position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  opacity:0.7;
+  height:100%;
+`
+
+export const TextWrapper = styled.div`
+padding:30px;
+`
+
+export const Text = styled.span`
+color:black;
+`
+
+export const MainText = styled.div`
+padding:25px 0px 12px 0px;
+font-size:22px;
+color:black;
+font-weight:500;
+text-align:center;
 `

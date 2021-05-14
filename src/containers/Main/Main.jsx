@@ -10,6 +10,8 @@ import { loginAction } from '../../data/modules/auth/auth.actions';
 import Home from '../../components/Home';
 import About from '../../components/About';
 import AboutIcon from '../../assets/About.png'
+import TimeLine from '../../components/TimeLine';
+import JonnyKaye from '../../components/JonnyKaye';
 export default () => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
@@ -38,12 +40,20 @@ export default () => {
         
 				<section id="main">
 
-						<div class="row gtr-200">
-							<div class="col-12">
+						<div className="row gtr-200">
+							<div className="col-12">
                     <About/>
 							</div>
 
-							<div class="col-12">
+             <div className="col-12">
+				<section>
+				  <div className="row">
+				   	<TimeLine/>
+				  </div>
+				</section>
+				<div className="col-12">
+				 <JonnyKaye/>
+				</div>
               
 									{/* <section class="box blog">
 										<div>

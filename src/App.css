@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -92,7 +92,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		color: #6b7770;
 		font-size: 13pt;
@@ -100,7 +100,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -200,7 +200,7 @@ input, select, textarea {
 
 	header > p {
 		display: block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #c1cac5;
@@ -1786,7 +1786,7 @@ input, select, textarea {
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -2093,7 +2093,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		margin: 0 0 1em 0;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -2178,7 +2178,7 @@ input, select, textarea {
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				margin: 0 0 1em 0;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #6b7770;
@@ -2272,7 +2272,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Montserrat', sans-serif;
 			font-weight: 400;
 		}
 
@@ -2289,7 +2289,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Montserrat', sans-serif;
 		}
 
 /* Page Wrapper */
@@ -2303,7 +2303,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		font-size: 2em;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 2em 0;
@@ -2348,7 +2348,7 @@ input, select, textarea {
 		text-align: center;
 		text-transform: uppercase;
 		cursor: default;
-        font-family: Helvetica;
+        font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         color: #A2A7B6;
         letter-spacing: -0.84px;
@@ -2385,7 +2385,7 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				text-decoration: none;
-				color: white;
+				color: black;
 				top: -6px;
                 padding: 1.5em 1.5em 0.25em 1.5em;
 				border-bottom-left-radius: 6px;
@@ -2398,8 +2398,7 @@ input, select, textarea {
 			}
 
 			#nav li:hover a, #nav li:hover span {
-				background: #C1CAC5;
-				color: #fff;
+				text-decoration: underline;
 			}
 
 			#nav li.active a, #nav li.active span {
@@ -2419,7 +2418,7 @@ input, select, textarea {
 		border-radius: 6px;
 		line-height: 2.75em;
 		text-align: center;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 1em 0;
@@ -2502,7 +2501,7 @@ input, select, textarea {
 
 			#banner .content p {
 				display: block;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #575d59;
@@ -2687,8 +2686,13 @@ input, select, textarea {
 		display: none;
 	}
     .web-nav-bar{
-        background-color: #031233;
+        background-color: #D8D8D8;
+		opacity: 0.7;
     }
+	.nav-item{
+		color:black;
+
+	}
 
 	@media screen and (max-width: 980px) {
 
@@ -2780,7 +2784,7 @@ input, select, textarea {
 				#titleBar .title {
 					display: block;
 					position: relative;
-					font-family: 'Open Sans Condensed', sans-serif;
+					font-family: 'Montserrat', sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
 					font-size: 1.25em;
@@ -2809,7 +2813,7 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
+						font-family: 'Montserrat', sans-serif;
 						font-weight: 900;
 					}
 
@@ -2861,7 +2865,7 @@ input, select, textarea {
 				background-image: url("./images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% 100%;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				font-size: 1.25em;
