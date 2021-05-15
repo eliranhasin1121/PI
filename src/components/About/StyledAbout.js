@@ -38,6 +38,7 @@ position: absolute;
   background-color:white;
   opacity:0.7;
   height:100%;
+  width:${({isMobile}) => isMobile ? '100%' : '25%'};
 `
 
 export const TextWrapper = styled.div`
