@@ -19,6 +19,7 @@ const Home = () => {
                 <a href="#" class="image featured"><img src={homeIcon} alt="" /></a>
 
             </section>
+           
         </div>
     )
 }

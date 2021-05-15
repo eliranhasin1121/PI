@@ -10,25 +10,25 @@ export default function OurProducts(){
 
     const {isMobile} = useMedia();
     return(
-        <div>
+        <>
             <ProductHeader>
              <MainText>OUR PRODUCTS</MainText>
              <SecondaryText>HEDGE FUNDS</SecondaryText>
             </ProductHeader>
-            <ProductsWrapper className="row col-12">
-              <ProductWrapper className="col-12-small col-4">
-               <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}}  src={productA}/>
+            <ProductsWrapper className="row">
+              <ProductWrapper className="col-4 col-12-small">
+               <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}} className="image featured" src={productA}/>
                <SecondaryText>PI NOVEL</SecondaryText>
               </ProductWrapper>
-              <ProductWrapper  className="col-12-small col-4">
-              <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}}  src={productB}/>
+              <ProductWrapper  className="col-4 col-12-small">
+              <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}} className="image featured" src={productB}/>
               <SecondaryText>PI EMERGING MARKETS</SecondaryText>
              </ProductWrapper>
-             <ProductWrapper className="col-12-small col-4"> 
-             <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}}  src={productC}/>
+             <ProductWrapper className="col-4 col-12-small"> 
+             <Image style={{width:isMobile ? 80 : 150,height:isMobile ? 80 : 150}} className="image featured" src={productC}/>
              <SecondaryText>PI OPPORTUNITIES</SecondaryText>
             </ProductWrapper>
             </ProductsWrapper>
-        </div>
+        </>
     )
 }

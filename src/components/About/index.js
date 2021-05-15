@@ -17,7 +17,7 @@ const About = () => {
             <section>
                 <StyledAbout className="row">
                     <StyledAboutImgSection className="col-6 col-12-small">
-                        <img  class="image featured" src={AboutIcon}/>
+                        <img  class="image featured" src={AboutIcon}></img>
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-small">
@@ -31,7 +31,7 @@ const About = () => {
             <section>
                 <StyledAbout className="row">
                 <div>
-                    <Image className="image featured" src={sectionB}/>
+                    <Image className="image featured" src={sectionB}></Image>
            
                 </div>
                 </StyledAbout>

@@ -13,7 +13,7 @@ export default function JonnyKaye(){
 
     return(
                 <JonnyKayeContainer >
-                    <Image  src={jonnyKaye}/>
+                    <Image className="image featured"  src={jonnyKaye}/>
              
                 </JonnyKayeContainer>
     )
@@ -35,5 +35,5 @@ width:${({isMobile}) => isMobile ? '100%' : '40%'};
 `
 
 const JonnyKayeContainer = styled(StyledAbout)`
-height:100%;
+
 `
