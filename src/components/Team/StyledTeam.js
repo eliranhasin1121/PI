@@ -5,7 +5,7 @@ export const StyledOutTeamText = Styled.p`
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding : ${(props) => props.isDevice ? '10px' : '45px' };
+    padding : ${(props) => props.isDevice ? '10px 20px' : '45px' };
     min-width: 175px;
 `
 

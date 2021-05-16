@@ -3,7 +3,9 @@ import { ProductWrapper,ProductsWrapper,Image,CryptoWrapper, CryptoTextWrapper, 
 import jasmin from '../../assets/jasmin.png';
 import cohen from '../../assets/cohenKaye.png';
 
-export default function Products(){
+export default function Products({history}){
+
+    const changeRoute = path => history.push(path);
 
     return(
         <div className="row">
@@ -19,7 +21,7 @@ export default function Products(){
         </ProductWrapper>
         <ProductWrapper>
         <JasminWrapper>
-          <Image className="image featured" src={jasmin}/>
+          <Image className="image featured" src={cohen}/>
         </JasminWrapper>
         </ProductWrapper>
         </ProductsWrapper>

@@ -2,5 +2,33 @@
   "welcome_to_webo_app": "Welcome to Webo App!",
   "change_language": "Change Language",
   "login": "Login",
-  "welcome": "Welcome {{name}}"
+  "welcome": "Welcome {{name}}",
+  "teams": {
+      "jonny":{
+        "description":"Mr. Kaye has over 29 years of extensive experience in trading and managing proprietary FX and bond derivative books in the United States, Europe and Emerging Markets. In 1999, Mr. Kaye co-founded Pi Financial Instruments, one of the largest proprietary derivatives houses in Israel. Since that time he has been in charge of the group's risk management and proprietary trading of global bonds and FX derivatives book. In March 2006, Mr. Kaye launched Pi Fund specializing in trading hedged global sovereign fixed income and FX instruments.Mr. Kaye started his career in 1992 trading listed options for Susquehana Investment Group, a Chicago based securities firm. From 1997 to 1999 Mr. Kaye was head of the proprietary derivatives desk at Ilanot-Batucha, a leading Israeli securities firm. He was awarded a BA Cum Laude and MBA both from Harvard University in 1992 and 1997, respectively. He also served as the captain of the National Champion (1991) Harvard squash team and earned a spot on the All-Ivy League team in 1989-90, 1990-91 and 1991-92.",
+        "name":"JONATHAN KAYE",
+        "role":"SENIOR PORTFOLIO MANAGER"
+      },
+      "dolev":{
+        "name":"DOLEV TROGMAN",
+        "role":"PORTFOLIO MANAGER",
+        "description":"Dolev started his career in 2013 as an Equity derivatives analyst at Brevan Howard, he then spent 4 years at JPMorgan in London as an FX options market maker (G10 & EM). He holds a Master's degree in Financial Markets from University of Paris Dauphine. Dolev Joined Pi in mid-2018."
+
+      },
+      "ronen":{
+        "name":"RONEN BITMAN ",
+        "role": "COO",
+        "description":"Ronen Bitman started his career in 2001 after serving in the Israeli Army, then he joined PI where he developed a risk management system for trading stocks, futures & options in TASE, Euro Stoxx & DAX, later on he served as a CTO. After establishing a firm team to handle the IT, Ronen served both passively and actively as an advisor in investing in technological companies."
+      },
+      "shlomi":{
+       "name":"SHLOMI COHEN ׂׂ(CPA)",
+       "role":"CFO",
+       "description":"Mr. Cohen is a graduate of The College of Management Academic Studies in Israel; he graduated with a B.A. in Business Administration with a focus in Accounting in 1995. Following his degree, Mr. Cohen worked at PwC (Casselman & Casselman) in Israel between 1995 and 1999. He then joined the Finance department in Orek Ltd., a part of the Yellow Pages Group in Israel. During the years 2001- 2005, Mr. Cohen operated a private practice as a CPA, from which he provided services to the Pi Group. As of 2005, Mr. Cohen has been leading the Finance department as a controller at Pi Group. Since the start of 2015, Mr. Cohen has taken over as Pi Fund's CFO."
+      },
+      "talia":{
+        "name": "TALIE ARKIN",
+        "role": "INVESTOR RELATIONS",
+        "description":"Talie joined Pi mid-2016, Ms. Arkin has over ten years' experience in marketing communications and investor relations, primarily in the real estate and energy sectors. Prior to joining Pi, Ms. Arkin took an active role in management and oversight of large scale development projects in the U.S., ranging from residential to retail to hotel condo complexes. Arkin acquired a Bachelor of laws degree from the College of Management in Israel and holds a Master's degree in real estate from Columbia University."
+      }
+  }
 }

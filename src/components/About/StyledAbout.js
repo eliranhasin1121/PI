@@ -45,7 +45,7 @@ padding:30px;
 `
 
 export const Text = styled.span`
-color:black;
+color:white;
 `
 
 export const MainText = styled.div`
