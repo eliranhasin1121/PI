@@ -31,7 +31,7 @@ const About = () => {
             <section>
                 <StyledAbout className="row">
                 <div>
-                    <Image className="image featured" src={sectionB}></Image>
+                    <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
            
                 </div>
                 </StyledAbout>

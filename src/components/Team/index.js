@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import Talia from '../../assets/talia.png'
-import Shlomi from '../../assets/shlomi.png';
-import Ronen from '../../assets/ronen.png';
 import { StyledOutTeamText , StyledOutTeamImage , StyledTeamMemberContainer , StyledTextContainer} from './StyledTeam';
 import useMedia from '../../customHooks/UseMedia';
-import texts from '../../config/translations/locales/en.json'
-const Team = ({team}) =>{
+import enTexts from '../../config/translations/locales/en.json'
+import heTexts from '../../config/translations/locales/he.json';
+const Team = ({team,isHE = false}) =>{
     const {isMobile , isDevice} = useMedia();
-
+   const texts = isHE ? heTexts : enTexts;
     return (
         <div>
         {

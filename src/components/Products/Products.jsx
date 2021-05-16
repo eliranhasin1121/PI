@@ -5,8 +5,7 @@ import cohen from '../../assets/cohenKaye.png';
 
 export default function Products({history}){
 
-    const changeRoute = path => history.push(path);
-
+  const handlePath = path => history.push(path);
     return(
         <div className="row">
         <ProductsWrapper className="col-6 col-12-medium">
@@ -36,7 +35,7 @@ export default function Products({history}){
                <CryptoTextWrapper>
                  <BigText>We believe in the 
                  future</BigText>
-                 <ReadMoreButton>READ MORE</ReadMoreButton>
+                 <ReadMoreButton onClick={()=>handlePath('/cohen-and-kaye')}>READ MORE</ReadMoreButton>
                </CryptoTextWrapper>
             </CryptoWrapper>
             </ProductWrapper>

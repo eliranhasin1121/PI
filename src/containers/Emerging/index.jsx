@@ -25,6 +25,10 @@ const team = [
     }
 ]  
 
+const texts = ['Raoul Wallenberg 18	 Building D,	1st Floor Ramat HaChayal,	Tel Aviv 	6971915 Israel Tel: +972 (0)3 373 2084 Fax: +972 (0)3 373 2102','SS&C Financial Services Ltd and SS&C Fund Services (Cayman) Ltd 39 Market Street Suite 3205 Camana Bay, Grand Cayman KY1-9003 Cayman Islands']
+
+const bannerText = 'For more financial instruments powered by PI-FUNDS'
+
 export default function Emerging({}){
 
     return (
@@ -33,7 +37,7 @@ export default function Emerging({}){
 		<section>
 		  <Home homeIcon={EmergingImg}/>
 		</section>
-        <article style={{margin:0,marginBottom:0}} id="main">
+        <article style={{margin:0,marginBottom:0,padding:0}} id="main">
 		  <div className="row gtr-200">
 			<div className="col-12">
                <About/>
@@ -46,7 +50,7 @@ export default function Emerging({}){
         <section id="Contact">
          <div class="row gtr-200">
             <div class="col-12">
-              <Contact/>
+              <Contact texts={texts} bannerText={bannerText}/>
             </div>
          </div>
        </section>

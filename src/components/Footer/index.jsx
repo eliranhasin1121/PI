@@ -56,7 +56,7 @@ export default function Footer(){
 
 const FooterContentContainer = styled.div`
 background-color:#000000;
-padding:0 20px;
+padding:20px;
 `
 
 const LinkItemWrapper = styled.div`

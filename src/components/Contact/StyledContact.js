@@ -1,13 +1,18 @@
-import Styled from 'styled-components';
+import Styled, { css } from 'styled-components';
 
 export const StyledFormHeader = Styled.h2`
     text-align: center;
 `
 
 export const StyledContactForm = Styled.div`
-    margin: auto;
+    ${({isMobile}) => isMobile && css`
+    margin:auto;
+    `}
     background-color: #D8D8D8;
-    padding:${({isMobile}) => isMobile ? '30px 20px' : '70px 40px'};
+    direction:${({isHE}) => isHE ? 'rtl' : 'ltr'};
+    ${({isHE}) =>isHE ?  css`
+    padding:${({isMobile}) => isMobile ? '20px 0 0 20px !important ' : '42px 0px 35px 0px !important'};
+    ` : ''}
 `
 
 export const StyledForm = Styled.form`
@@ -64,5 +69,11 @@ export const TextContainer = Styled.div``
 
 export const ContactTexts = Styled.div`
 
-padding:40px;
+padding: 40px 40px 0px 40px;
+`
+
+export const TextContact = Styled.p`
+margin-bottom: 1rem !important;
+padding-left:20px;
+font-size:12px !important;
 `
