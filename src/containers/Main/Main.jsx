@@ -1,8 +1,10 @@
 import React from 'react';
-import styled from 'styled-components'
-import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
+import styled from 'styled-components';
+import homeIcon from '../../assets/pi-home.png';
+import Ronen from '../../assets/ronen.png';
 import arrowDown from '../../assets/scroll-down.png';
+import Shlomi from '../../assets/shlomi.png';
+import Talia from '../../assets/talia.png';
 import About from '../../components/About';
 import Home from '../../components/Home';
 import JonnyKaye from '../../components/JonnyKaye';
@@ -10,14 +12,9 @@ import OurProduct from '../../components/OurProducts/OurProducts';
 import Products from '../../components/Products/Products';
 import Team from '../../components/Team';
 import TimeLine from '../../components/TimeLine';
-import { changeLanguage, getActiveLanguage } from '../../config/translations/utils';
 import useMedia from '../../customHooks/UseMedia';
-import { loginAction } from '../../data/modules/auth/auth.actions';
 import { OurProductStyled, ScrollImage, TextWrapper } from './Main.styled';
-import homeIcon from '../../assets/pi-home.png'
-import Talia from '../../assets/talia.png'
-import Shlomi from '../../assets/shlomi.png';
-import Ronen from '../../assets/ronen.png';
+
 
 
 const team = [
@@ -37,11 +34,12 @@ const team = [
 export default ({history}) => {
 
 
-  const {isMobile} = useMedia();
+  const {isMobile, isDevice} = useMedia();
 
 
   return (
 	<>
+		
 		<section>
 		  <Home homeIcon={homeIcon}/>
 		</section>

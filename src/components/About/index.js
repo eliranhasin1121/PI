@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import AboutIcon from '../../assets/about-logo.png'
+import {Row,Col} from 'antd';
 import PhilosophyIcon from '../../assets/Philosophy.png';
 import { StyledAbout,  StyledAboutImgSection , 
     StyledAboutTextSection , StyledAboutText , SyledPhilosophy,Image,TextWrapper,Text,MainText } from './StyledAbout';
@@ -30,10 +31,21 @@ const About = () => {
 
             <section>
                 <StyledAbout className="row">
-                <div>
-                    <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
+                <div className="col-6 col-12-small">
+                             <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
+                        </div>
+                        <div className="col-6 col-12-small">
+                           <TextWrapper>
+                             <MainText>Ahron Cohen</MainText>
+                             <Text>
+                             Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
+                             Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
+                             Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
+                             </Text>
+                          </TextWrapper>
+                        </div>
+                      
            
-                </div>
                 </StyledAbout>
             </section>
         </div>

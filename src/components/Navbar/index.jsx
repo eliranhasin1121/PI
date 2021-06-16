@@ -1,19 +1,21 @@
 import React from 'react';
-import { useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router';
 import styled from 'styled-components';
 import oppLogo from '../../assets/opprtunities-logo.png';
 import PiNovelLOGO from '../../assets/pi-logo.png';
+import {Link} from 'react-scroll';
 export default function Navbar({}){
     const location = useLocation();
     const isHE  = !!location.pathname.includes('pi-opportunities');
+    const history = useHistory();
 
     return(
         <Nav isHE={isHE} className="web-nav-bar" id="nav">
-        <StyledPiNovelIcon src={location.pathname.includes('pi-opportunities') ? oppLogo : PiNovelLOGO}></StyledPiNovelIcon>
+        <StyledPiNovelIcon onClick={() => history.push('/')} src={location.pathname.includes('pi-opportunities') ? oppLogo : PiNovelLOGO}></StyledPiNovelIcon>
         <ul>
-            <li><a style={{color: isHE ? 'white' : 'black'}} className="nav-item scrolly" href="#main">{isHE ? 'ראשי' : 'ABOUT'}</a></li>
-            <li><a style={{color: isHE ? 'white' : 'black'}} className="nav-item" href="#team">{isHE ? 'צוות' : 'TEAM'}</a></li>
-            <li><a style={{color: isHE ? 'white' : 'black'}} className="nav-item" href="no-sidebar.html">{isHE ? 'צור קשר' : 'CONTACT'}</a></li>
+            <li aria-label='About Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'main'} spy={true} smooth={true}>{isHE ? 'ראשי' : 'ABOUT'}</Link></li>
+            <li aria-label='Team Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'team'} spy={true} smooth={true}>{isHE ? 'צוות' : 'TEAM'}</Link></li>
+            <li aria-label='Contact Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'contact'} spy={true} smooth={true}>{isHE ? 'צור קשר' : 'CONTACT'}</Link></li>
         </ul>
     </Nav>
     )

@@ -36,7 +36,7 @@ export default function Cohen({}){
         <section id="Contact">
          <div class="row gtr-200">
             <div class="col-12">
-              <Contact texts={texts} bannerText={bannerText}/>
+              <Contact  texts={texts} bannerText={bannerText}/>
             </div>
          </div>
        </section>

@@ -12,6 +12,9 @@ import Emerging from './containers/Emerging';
 import Main from './containers/Main/Main';
 import opportunities from './containers/Oppourtiunities';
 import createStore from './data/store';
+import BurgerMenu from './components/BurgerMenu/BurgerMenu'
+import useMedia from './customHooks/UseMedia';
+
 
 const routes = [
   { path: "/", component: Main, isExact: true },
@@ -22,15 +25,16 @@ const routes = [
 
 function App() {
 
-  useEffect(() => {
+  const {isMobile, isDevice} = useMedia();
 
-  },[])
+
 
   return (
     <Provider store={createStore()}>
       <ConfigProvider direction="rtl">
         <AppWrapper>
         <div className="page-wrapper">
+        {isDevice && <BurgerMenu/>}
         <BrowserRouter>
           <Navbar/>
             {routes.map(route => (

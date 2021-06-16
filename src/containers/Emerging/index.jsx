@@ -47,9 +47,9 @@ export default function Emerging({}){
 		<h2 className="our-team-header">OUR TEAM</h2>
 			<Team team={team}/>
 		</OurTeamWrapper>
-        <section id="Contact">
+        <section id="contact">
          <div class="row gtr-200">
-            <div class="col-12">
+            <div class="col-12" >
               <Contact texts={texts} bannerText={bannerText}/>
             </div>
          </div>

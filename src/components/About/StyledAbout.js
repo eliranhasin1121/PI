@@ -41,15 +41,15 @@ position: absolute;
 `
 
 export const TextWrapper = styled.div`
-padding:30px;
+padding:0 30px;
 `
 
 export const Text = styled.span`
-color:white;
+color:black;
 `
 
 export const MainText = styled.div`
-padding:25px 0px 12px 0px;
+padding:0 0px 12px 0px;
 font-size:22px;
 color:black;
 font-weight:500;
