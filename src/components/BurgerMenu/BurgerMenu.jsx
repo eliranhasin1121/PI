@@ -13,7 +13,6 @@ const BurgerMenu = ()=> {
     const [logo,setLogo] = useState(null)
     const {pathname} = useLocation();
 
-    console.log({pathname})
 
 
     useEffect(() => {
@@ -24,7 +23,6 @@ const BurgerMenu = ()=> {
         }
     },[pathname])
    
-    console.log(pathname === '/pi-opportunities')
     const isHE = pathname === '/pi-opportunities';
     return (
         <StyledBurderMenuContianer isOpp={pathname === '/pi-opportunities'}>
