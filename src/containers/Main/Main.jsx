@@ -40,7 +40,7 @@ export default ({history}) => {
   return (
 	<>
 		
-		<section>
+		<section id="home">
 		  <Home homeIcon={homeIcon}/>
 		</section>
         <article id="main">

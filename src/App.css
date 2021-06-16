@@ -2688,9 +2688,6 @@ input, select, textarea {
 
 		/* Basic */
 
-			html, body {
-				overflow-x: hidden;
-			}
 
 		/* Box */
 

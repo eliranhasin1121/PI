@@ -20,7 +20,7 @@ export default function JonnyKaye(){
                     </TextWrapper>
                     </div>
                     <div className="col-6 col-12-small">
-                    <Image className="image featured"  src={jonnyKaye}/>
+                    <JonnyImage className="image featured"  src={jonnyKaye}/>
                     </div>
                 </JonnyKayeContainer>
     )
@@ -35,4 +35,8 @@ width:${({isMobile}) => isMobile ? '100%' : '40%'};
 
 const JonnyKayeContainer = styled(StyledAbout)`
 
+`
+
+const JonnyImage = styled.img`
+height:100%;
 `

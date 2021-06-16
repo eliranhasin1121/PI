@@ -34,7 +34,7 @@ export default function Emerging({}){
     return (
 
         <>
-		<section>
+		<section id="home">
 		  <Home homeIcon={EmergingImg}/>
 		</section>
         <article style={{margin:0,marginBottom:0,padding:0}} id="main">
