@@ -34,8 +34,8 @@ function App() {
       <ConfigProvider direction="rtl">
         <AppWrapper>
         <div className="page-wrapper">
-        {isDevice && <BurgerMenu/>}
         <BrowserRouter>
+        {isDevice && <BurgerMenu/>}
           <Navbar/>
             {routes.map(route => (
               <Route

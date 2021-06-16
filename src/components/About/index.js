@@ -10,9 +10,6 @@ import useResize from '../../customHooks/UseResize';
 
 const About = () => {
     const {isMobile} = useMedia();
-    // const imgRef = useRef();
-    // const {width,height} = useResize(imgRef);
-
     return (
         <div>
             <section>

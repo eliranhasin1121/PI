@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledAbout = styled.div`
     height: 740px;
     position:relative;
-    color:white;
+    background-color:white;
     height:100%;
 `
 

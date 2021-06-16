@@ -6,8 +6,13 @@ import PiNovelLOGO from '../../assets/pi-logo.png';
 import {Link} from 'react-scroll';
 export default function Navbar({}){
     const location = useLocation();
+    const {pathname} = useLocation();
     const isHE  = !!location.pathname.includes('pi-opportunities');
     const history = useHistory();
+
+    if(pathname.includes('cohen')){
+        return null;
+    }
 
     return(
         <Nav isHE={isHE} className="web-nav-bar" id="nav">

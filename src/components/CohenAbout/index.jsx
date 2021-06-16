@@ -27,14 +27,14 @@ export default function About() {
                 </StyledAbout>
             </section>
 
-            <section>
+            {/* <section>
                 <StyledAbout className="row">
                 <div>
                     <Image className="image featured" src={sectionB}></Image>
            
                 </div>
                 </StyledAbout>
-            </section>
+            </section> */}
         </div>
     )
 }

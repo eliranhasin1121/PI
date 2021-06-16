@@ -2,7 +2,7 @@ import Styled from 'styled-components';
 
 
 export const StyledBurderMenuContianer = Styled.div`
-    background-color:#A2A7B6;
+    background-color:${({isOpp}) => isOpp ? 'black' : '#D8D8D8'};
     height: 80px;
     z-index: 9999;
     width: 100%;
@@ -62,7 +62,7 @@ body
   padding: 0;
   
   /* make it look decent enough */
-  background: #232323;
+  background:#232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -122,7 +122,7 @@ body
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: ${({isOpp}) => isOpp ? '#cdcdcd' : 'black'};
   border-radius: 3px;
   
   z-index: 1;
