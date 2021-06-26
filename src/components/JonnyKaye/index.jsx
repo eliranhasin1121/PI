@@ -34,7 +34,7 @@ width:${({isMobile}) => isMobile ? '100%' : '40%'};
 `
 
 const JonnyKayeContainer = styled(StyledAbout)`
-background-color:lightgrey;
+background-color:rgba(211,211,211,0.4);
 padding:20px 0px;
 `
 

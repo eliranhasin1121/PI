@@ -30,7 +30,7 @@ export default function About() {
             </section>
 
             <section>
-                <div className="row"  style={{paddingRight:15,backgroundColor:'lightgrey'}}>
+                <div className="row"  style={{paddingRight:15,backgroundColor:'rgba(211,211,211,0.4)'}}>
                     <div className="col-6 col-12-small">
                       <Image className="image featured" src={AboutIcon}></Image>
                     </div>

@@ -27,7 +27,7 @@ const About = () => {
             </section>
 
             <section>
-                <StyledAbout style={{backgroundColor:'lightgrey'}} className="row">
+                <StyledAbout style={{backgroundColor:'rgba(211,211,211,0.4)'}} className="row">
                 <div  className="col-6 col-12-small">
                              <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
                         </div>
