@@ -37,9 +37,9 @@ const portfolio = [
     },
     {
         name:'Replay technology',
-        description:() => <div>Computer vision acquired by <img src={intel} style={{height:32,width:48}} className="image featured"/></div>,
+        description:() => <span >Computer vision <br/> <span style={{display:'flex'}}><span style={{paddingRight:7}}>acquired by</span> <img src={intel} style={{height:32,width:48,position:'relative'}} className="featured mid"/></span></span>,
         logo:replay,
-        sizes:{height:70,width:171}
+        sizes:{height:70,width:200}
 
     },
     {

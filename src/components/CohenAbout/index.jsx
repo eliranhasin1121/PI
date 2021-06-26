@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
-import AboutIcon from '../../assets/grass-img.png'
-import { StyledAbout,  StyledAboutImgSection , 
-    StyledAboutTextSection , StyledAboutText , SyledPhilosophy,Image,TextWrapper,Text,MainText } from '../../components/About/StyledAbout';
-    import sectionB from '../../assets/emerging-sectionB.png'
-    import useMedia from '../../customHooks/UseMedia';
-import useResize from '../../customHooks/UseResize';
+import React from 'react';
+import AboutIcon from '../../assets/grass-img.png';
+import {
+    StyledAbout, StyledAboutImgSection,
+    StyledAboutText, StyledAboutTextSection
+} from '../../components/About/StyledAbout';
+import useMedia from '../../customHooks/UseMedia';
 
 export default function About() {
     const {isMobile} = useMedia();
@@ -20,8 +20,8 @@ export default function About() {
                     
                     <StyledAboutTextSection className="col-6 col-12-small">
                         <StyledAboutText style={{fontSize:28}}>
-                        We invest in early-stage ventures in Israel. We focus on identifying and partnering with the very best and most promising entrepreneurs and innovators with a view to building disruptive, world-changing companies.<br/>
-                        Drawing upon our entrepreneurship experience and extensive network of business contacts, and the ability to support our portfolio companies with follow-up funding
+                        We invest in early-stage ventures in Israel.<br/> We focus on identifying and partnering<br/> with the very best and most promising <br/>entrepreneurs and innovators with a view <br/>to building disruptive, world-changing<br/> companies.<br/>
+                        Drawing upon our entrepreneurship <br/> experience and extensive network of<br/> business contacts, and the ability to<br/> support our portfolio companies with<br/> follow-up funding
                         </StyledAboutText>
                     </StyledAboutTextSection>
                 </StyledAbout>

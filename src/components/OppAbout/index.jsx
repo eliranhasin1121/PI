@@ -16,13 +16,17 @@ export default function About() {
         <div>
             <section>
                 <StyledAbout className="row">
-                <StyledAboutTextSection className="col-6 col-12-small">
-                <StyledAboutText>
-                הקרן הינה קרן הזדמנויות המכוונת לנטרל סיכוני שוק ולהעניק תשואה חיובית בכל מצב שוק
+                <StyledAboutTextSection style={{justifyContent: 'flex-end'}} className="col-6 col-12-small">
+                <StyledAboutText style={{textAlign:'right'}}>
+                הקרן הינה קרן הזדמנויות המכוונת
+              <br/>
+              לנטרל סיכוני שוק ולהעניק
+              <br/>
+              תשואה חיובית בכל מצב שוק
                 </StyledAboutText>
             </StyledAboutTextSection>
                     <StyledAboutImgSection className="col-6 col-12-small">
-                        <img  class="image featured" src={sectionB}></img>
+                        <img  class="image featured mid" src={sectionB}></img>
                     </StyledAboutImgSection>
                     
                    
@@ -41,7 +45,7 @@ export default function About() {
 הקרן משיגה מטרה זו באמצעות אסטרטגיות לונג/שורט בנכסים פיננסיים כגון מניות ואג"ח קונצרני, פעילות בשוק הראשוני הנפקות/הרחבות סדרה/הפצות, ניצול מצבים מיוחדים וכשלי שוק הנובעים מהצעות רכש, הסדרי חוב, מאבקי שליטה, תנועות הון חריגות ועיוותי רגולציה, כל זאת תוך ניתוח המצב העסקי והפיננסי של החברות.
 הקרן תפתח פוזיציות אשר נראות לה הזדמנותיות, תוך ניטרול חלקי/מלא של הסיכון ותשאף להקטין ככל האפשר את סיכון השוק.
 
-אין באמור לעיל כדי להגביל את מדיניות ההשקעות של הקרן או לצמצם את גורמי הסיכון הנלווים להשקעה בקרן, כפי שהם מופיעים בהסכם השותפות.
+.אין באמור לעיל כדי להגביל את מדיניות ההשקעות של הקרן או לצמצם את גורמי הסיכון הנלווים להשקעה בקרן, כפי שהם מופיעים בהסכם השותפות
                         </WrappedText>
                     </div>
                 </div>

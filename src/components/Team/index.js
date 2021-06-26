@@ -14,7 +14,7 @@ const Team = ({team,isHE = false,isEmerging}) =>{
                 <section>
                 <Row reverse={index%2  !== 0 && !isDevice} className="row">
                     <StyledTeamMemberContainer className="col-6 col-6-medium">
-                    <StyledOutTeamImage isMobile={isMobile} className="image featured mid" style={{height:isEmerging && index=== 0 ? '65%' : '90%'}} src={member.img}/>
+                    <StyledOutTeamImage isMobile={isMobile} className="image featured mid"  src={member.img}/>
                   {isDevice &&  <StyledOutTeamText isHE={isHE} isDevice={isDevice}>
                         <span style={{fontWeight:400}}>{texts.teams[`${member.name}`].name}</span>
                         <span style={{fontWeight:400}}>{texts.teams[`${member.name}`].role}</span>   
