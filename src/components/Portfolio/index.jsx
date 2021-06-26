@@ -7,27 +7,27 @@ import superSingle from '../../assets/Super-signal.png';
 import replay from '../../assets/download.png';
 import intel from '../../assets/intel.png';
 import larium from '../../assets/Larium-logo.png';
-import { Logo, Name,Row} from './Portfolio.styled';
+import { Logo, Name,Row } from './Portfolio.styled';
 
 const portfolio = [
     {
        name:'cyberpion',
        description: () => <span>Cybersecurity</span>,
        logo: Cybersecurity,
-       sizes:{height:47.63,width:230}
+       sizes:{height:47.63,width:195}
     },
     {
         name:'Rentigo',
         description: () => <span>Real East</span>,
         logo:rentigo,
-       sizes:{height:67,width:230}
+       sizes:{height:67,width:195}
 
     },
     {
         name:'Safeway',
         description:() => <span>Tourism</span>,
         logo:safaway,
-       sizes:{height:67,width:230}
+       sizes:{height:67,width:195}
     },
     {
         name:'Super single',
@@ -58,7 +58,7 @@ export default function Portfolio({}){
             {portfolio.map((company,index) => (
                 <div className={"col-3 col-12-medium"}>
                   <CompanyWrapper width={company.sizes.width}>
-                  <Logo height={company.sizes.height} style={{width:company.sizes.width}} src={company.logo} className="image featured"/>
+                  <Logo height={company.sizes.height} style={{width:company.sizes.width}} src={company.logo} className="image featured mid"/>
                      <Name>{company.name}</Name>
                      {company.description()}
                   </CompanyWrapper>

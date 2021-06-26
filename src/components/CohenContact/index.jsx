@@ -1,10 +1,11 @@
 import React from 'react';
 import Banner from '../Banner';
 import ContactRight from '../../assets/contact.png';
+import ContactOpp from '../../assets/contact-opp.png'
 import { StyledContactForm , StyledFormHeader , StyledForm, Input,ContactTextWrapper,ContactContainer,Button,ButtonWrapper,TextContainer,ContactTexts,TextContact  } from '../Contact/StyledContact';
 import UseMedia from '../../customHooks/UseMedia';
 
-const Contact = ({isHE = false,bannerText,texts = []}) =>{
+const Contact = ({isHE = false,bannerText,texts = [],contactRight}) =>{
 
     const {isMobile} = UseMedia();
     return (
@@ -16,7 +17,7 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                         <StyledFormHeader style={{padding:0}}>{ isHE ? 'צור קשר': 'CONTACT US'}</StyledFormHeader>
                         <StyledForm>
                             <Input
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="text" 
                                 name="YOUR NAME" 
                                 placeholder={isHE ? 'שם מלא' : "YOUR NAME"}
@@ -24,7 +25,7 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                                 />
                             
                             <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder={isHE ?'כתובת אימייל' : "EMAIL"} 
@@ -32,7 +33,7 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                                 />
 
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="POSITION" 
@@ -40,33 +41,33 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                                 />
                             
                             <Input
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}} 
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}} 
                                 type="text" 
                                 name="CELLPHONE" 
                                 placeholder={isHE ? 'מספר טלפון' : "PHONE"} />
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="COMPANY NAME" 
                                 required
                                 />
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="WEBSITE URL" 
 
                                 />
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="INDUSTRY" 
                                 />
 
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="BRIFE DESCRIPTION (255 characters max)"
@@ -74,19 +75,19 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                                 required
                                 />
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="HOW DID YOU HEAR ABOUT US?" 
                                 />
                                 <Input 
-                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                                style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                                 type="email" 
                                 name="EMAIL" 
                                 placeholder="INDUSTRY" 
                                 />
                             <Input 
-                            style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0}}
+                            style={{border:'none',borderBottom:'2px solid black',background:'transparent',borderRadius:0,height:35,fontSize:12}}
                             type="text" 
                             name="YOUR MESSAGE" 
                             placeholder={isHE ? 'הודעה':"YOUR MESSAGE"} />
@@ -103,7 +104,7 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                         </ContactTexts>
                     </StyledContactForm>
                     <ContactContainer style={{padding:0}} className="col-6 col-12-medium">
-                    <img className="image featured" style={{margin:0}} src={ContactRight}></img>
+                    <img className="image featured" style={{margin:0,height:'100%'}} src={contactRight}></img>
                     </ContactContainer>
                 </div>
             </section>

@@ -9,12 +9,12 @@ width:100%;
 
 export const MainText = styled.div`
 font-size:22px;
-font-weight:700;
+font-weight:500;
 `
 
 export const SecondaryText = styled.div`
 font-size:14px;
-font-weight:500;
+font-weight:100;
 `
 
 export const ProductsWrapper = styled.div`

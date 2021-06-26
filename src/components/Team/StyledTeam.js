@@ -7,6 +7,7 @@ export const StyledOutTeamText = Styled.p`
     flex-direction: column;
     padding : ${(props) => props.isDevice ? '10px 20px' : '45px' };
     min-width: 175px;
+    text-align:${({isHE}) => isHE ? 'right' : 'left'};
 `
 
 export const StyledOutTeamImage = Styled.img`
@@ -15,6 +16,7 @@ export const StyledOutTeamImage = Styled.img`
 
 export const StyledTeamMemberContainer = Styled.div`
     display: flex;
+    justify-content:center;
 
 `
 

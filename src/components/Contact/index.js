@@ -1,10 +1,9 @@
 import React from 'react';
 import Banner from '../Banner';
-import ContactRight from '../../assets/contact.png';
 import { StyledContactForm , StyledFormHeader , StyledForm, Input,ContactTextWrapper,ContactContainer,Button,ButtonWrapper,TextContainer,ContactTexts,TextContact  } from './StyledContact';
 import UseMedia from '../../customHooks/UseMedia';
 
-const Contact = ({isHE = false,bannerText,texts = []}) =>{
+const Contact = ({isHE = false,bannerText,texts = [],contactImg}) =>{
 
     const {isMobile} = UseMedia();
     return (
@@ -51,7 +50,7 @@ const Contact = ({isHE = false,bannerText,texts = []}) =>{
                         </ContactTexts>
                     </StyledContactForm>
                     <ContactContainer style={{padding:0}} className="col-6 col-12-medium">
-                    <img className="image featured" style={{margin:0}} src={ContactRight}></img>
+                    <img className="image featured" style={{margin:0}} src={contactImg}></img>
                     </ContactContainer>
                 </div>
             </section>

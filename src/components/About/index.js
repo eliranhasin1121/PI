@@ -15,7 +15,7 @@ const About = () => {
             <section>
                 <StyledAbout className="row">
                     <StyledAboutImgSection className="col-6 col-12-small">
-                        <img  class="image featured" src={AboutIcon}></img>
+                        <Image style={{width:'65%',justifyContent:'center'}}  className="image featured mid" src={AboutIcon}></Image>
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-small">
@@ -27,8 +27,8 @@ const About = () => {
             </section>
 
             <section>
-                <StyledAbout className="row">
-                <div className="col-6 col-12-small">
+                <StyledAbout style={{backgroundColor:'lightgrey'}} className="row">
+                <div  className="col-6 col-12-small">
                              <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
                         </div>
                         <div className="col-6 col-12-small">

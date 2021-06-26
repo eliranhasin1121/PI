@@ -20,14 +20,14 @@ export default function Products({history}){
         </ProductWrapper>
         <ProductWrapper>
         <JasminWrapper>
-          <Image className="image featured" src={cohen}/>
+          <Image className="image featured large" src={cohen}/>
         </JasminWrapper>
         </ProductWrapper>
         </ProductsWrapper>
         <ProductsWrapper className="col-6 col-12-medium">
         <ProductWrapper>
         <JasminWrapper>
-        <Image className="image featured" src={jasmin}/>
+        <Image className="image featured large" src={jasmin}/>
         </JasminWrapper>
         </ProductWrapper>
         <ProductWrapper> 

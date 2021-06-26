@@ -7,7 +7,7 @@ import Contact from '../../components/CohenContact'
 import Portfolio from '../../components/Portfolio';
 import cohen from '../../assets/cohen-background.png'
 import About from '../../components/CohenAbout';
-
+import contactImg from '../../assets/contact-cohen.png';
 
 
 
@@ -36,7 +36,7 @@ export default function Cohen({}){
         <section id="Contact">
          <div class="row gtr-200">
             <div class="col-12">
-              <Contact  texts={texts} bannerText={bannerText}/>
+              <Contact isOpp texts={texts} bannerText={bannerText} contactRight={contactImg}/>
             </div>
          </div>
        </section>

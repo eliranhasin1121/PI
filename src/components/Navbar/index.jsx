@@ -31,7 +31,7 @@ export const StyledPiNovelIcon = styled.img`
     z-index: 1001;
     position: fixed;
     top: 18px;
-    left: 6px;
+    left: 34px;
 `
  const Nav = styled.nav`
 background-color:${({isHE}) => isHE ? 'black' : '#D8D8D8'};

@@ -14,7 +14,7 @@ export default function Footer(){
 
 		 {!isMobile ? ( 
              <>
-          <LinkItemWrapper style={{margin: '15px 0px 0px 35px'}} className="col-2-small">
+          <LinkItemWrapper style={{margin: '35px 0px 0px 35px'}} className="col-2-small">
 		    <Logo className="image featured"  src={footerLogo}/>
 		  </LinkItemWrapper>
 		  <LinkItemWrapper className="col-3">

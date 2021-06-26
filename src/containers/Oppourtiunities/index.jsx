@@ -8,6 +8,7 @@ import Team from '../../components/Team';
 import aharon from '../../assets/aharon.png';
 import jerry from '../../assets/jerry.png';
 import idan from '../../assets/idan.png';
+import contactOpp from '../../assets/contact-opp.png';
 
 export default function opportunities({}){
 
@@ -46,7 +47,7 @@ const bannerText = 'לעוד מוצרים מבית היוצר של פאי פינ
         <section id="contact">
          <div class="row gtr-200">
             <div class="col-12">
-              <Contact isHE bannerText={bannerText} texts={texts}/>
+              <Contact isHE bannerText={bannerText} contactImg={contactOpp} texts={texts}/>
             </div>
          </div>
        </section>

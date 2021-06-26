@@ -15,12 +15,12 @@ export default function About() {
             <section>
                 <StyledAbout className="row">
                     <StyledAboutImgSection className="col-6 col-12-small">
-                        <img  class="image featured" src={AboutIcon}></img>
+                        <img  class="image featured mid" src={AboutIcon}></img>
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-small">
-                        <StyledAboutText>
-                        We invest in early-stage ventures in Israel. We focus on identifying and partnering with the very best and most promising entrepreneurs and innovators with a view to building disruptive, world-changing companies. 
+                        <StyledAboutText style={{fontSize:28}}>
+                        We invest in early-stage ventures in Israel. We focus on identifying and partnering with the very best and most promising entrepreneurs and innovators with a view to building disruptive, world-changing companies.<br/>
                         Drawing upon our entrepreneurship experience and extensive network of business contacts, and the ability to support our portfolio companies with follow-up funding
                         </StyledAboutText>
                     </StyledAboutTextSection>

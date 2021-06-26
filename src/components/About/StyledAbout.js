@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledAbout = styled.div`
     height: 740px;
     position:relative;
-    background-color:white;
     height:100%;
 `
 
@@ -11,6 +10,7 @@ export const StyledAbout = styled.div`
 export const StyledAboutImgSection = styled.div`
     display: flex;
     align-items: center;
+    justify-content:center;
 `
 
 export const Image = styled.img`
@@ -26,7 +26,7 @@ export const StyledAboutText = styled.p`
     font-size: 40px;
     color: #000000;
     line-height: 1;
-    text-align: center;
+    font-weight:100;
 `
 
 export const SyledPhilosophy = styled.div`
@@ -46,12 +46,13 @@ padding:0 30px;
 
 export const Text = styled.span`
 color:black;
+font-weight:100;
 `
 
 export const MainText = styled.div`
 padding:0 0px 12px 0px;
 font-size:22px;
 color:black;
-font-weight:500;
+font-weight:400;
 text-align:center;
 `

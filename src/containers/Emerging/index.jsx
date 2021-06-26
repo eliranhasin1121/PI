@@ -9,6 +9,7 @@ import About from '../../components/EmergingAbout';
 import dolev from '../../assets/dolev.png';
 import talia from '../../assets/talia.png';
 import jonny from '../../assets/jonny.png';
+import ContactRight from '../../assets/contact.png';
 
 const team = [
     {
@@ -45,12 +46,12 @@ export default function Emerging({}){
 		  </div>
 		<OurTeamWrapper id="team" class="col-12">
 		<h2 className="our-team-header">OUR TEAM</h2>
-			<Team team={team}/>
+			<Team isEmerging team={team}/>
 		</OurTeamWrapper>
         <section id="contact">
          <div class="row gtr-200">
             <div class="col-12" >
-              <Contact texts={texts} bannerText={bannerText}/>
+              <Contact texts={texts} bannerText={bannerText} contactImg={ContactRight}/>
             </div>
          </div>
        </section>
