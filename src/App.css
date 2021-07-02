@@ -26,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: #ffffff;
+
 }
 
 ol, ul {
@@ -48,6 +50,8 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	background-color: #ffffff;
+
 }
 
 mark {
@@ -78,7 +82,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f2f5f3;
+		background-color: #ffffff;
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3064,7 +3069,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 3em 0;
+			
 			}
 
 		/* Sidebar */

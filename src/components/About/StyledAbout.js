@@ -1,9 +1,12 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledAbout = styled.div`
     height: 740px;
     position:relative;
     height:100%;
+    ${({isDevice}) => isDevice && css`
+        flex-direction: column-reverse;
+    ` }
 `
 
 
@@ -25,8 +28,15 @@ export const StyledAboutTextSection = styled.div`
 export const StyledAboutText = styled.p`
     font-size: 40px;
     color: #000000;
-    line-height: 1;
+    line-height: normal;
     font-weight:100;
+
+    ${({isMobile}) => isMobile && css`
+        padding:0 40px;
+        font-size:32px;
+        line-height: normal;
+    `}
+
 `
 
 export const SyledPhilosophy = styled.div`
@@ -44,9 +54,10 @@ export const TextWrapper = styled.div`
 padding:0 30px;
 `
 
-export const Text = styled.span`
+export const Text = styled.p`
 color:black;
 font-weight:100;
+padding:0 10px;
 `
 
 export const MainText = styled.div`

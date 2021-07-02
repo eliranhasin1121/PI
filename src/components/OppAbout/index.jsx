@@ -9,15 +9,15 @@ import {
 import useMedia from '../../customHooks/UseMedia';
 
 export default function About() {
-    const {isMobile} = useMedia();
+    const {isMobile, isDevice} = useMedia();
  
 
     return (
         <div>
             <section>
-                <StyledAbout className="row">
+                <StyledAbout isDevice={isDevice}  className="row">
                 <StyledAboutTextSection style={{justifyContent: 'flex-end'}} className="col-6 col-12-small">
-                <StyledAboutText style={{textAlign:'right'}}>
+                <StyledAboutText isMobile={isMobile} style={{textAlign:'right'}}>
                 הקרן הינה קרן הזדמנויות המכוונת
               <br/>
               לנטרל סיכוני שוק ולהעניק

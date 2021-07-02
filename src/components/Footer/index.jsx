@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import footerLogo from '../../assets/footer-logo.png';
 import footerCohen from '../../assets/footer-cohen.png'
 import useMedia from '../../customHooks/UseMedia';
@@ -15,8 +15,8 @@ export default function Footer({history}){
 
     return(
 		<>
-        <FooterContainer>
-		 <FooterContentContainer>
+        <FooterContainer >
+		 <FooterContentContainer isMobile={isMobile}>
 
 		 {!isMobile ? ( 
              <>
@@ -79,6 +79,9 @@ background-color:#000000;
 padding:20px;
 display:flex;
 justify-content:space-between;
+${({isMobile}) => isMobile && css`
+padding-top:50px;
+`}
 `
 
 const InternalRow = styled.div`

@@ -42,7 +42,7 @@ const bannerText = 'לעוד מוצרים מבית היוצר של פאי פינ
 		  </div>
 		<OurTeamWrapper id="team" class="col-12">
 		<h2 className="our-team-header">הצוות שלנו</h2>
-			<Team isHE team={team}/>
+			<Team isOpp isHE team={team}/>
 		</OurTeamWrapper>
         <section id="contact">
          <div class="row gtr-200">

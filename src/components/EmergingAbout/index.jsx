@@ -21,7 +21,7 @@ export default function About() {
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-small">
-                        <StyledAboutText>
+                        <StyledAboutText isMobile={isMobile}>
                         PI EM is an absolute return macro volatility hedge fund focused primarily on emerging market currencies and sovereign debt.
                         </StyledAboutText>
                     </StyledAboutTextSection>

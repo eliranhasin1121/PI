@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import homeIcon from '../../assets/pi-home.png';
 import Ronen from '../../assets/ronen.png';
 import arrowDown from '../../assets/scroll-down.png';
@@ -44,12 +44,14 @@ export default ({history}) => {
 		  <Home homeIcon={homeIcon}/>
 		</section>
         <article id="main">
-		  <div className="row gtr-200">
+		  <div >
 			<div className="col-12">
                <About/>
 			</div>
 			<section>
+				<div className="row">
 			  <TimeLine/>
+				</div>
 			 </section>
 			 <section>
 		    	<JonnyKaye/>
@@ -71,7 +73,7 @@ export default ({history}) => {
 		  <Products history={history}/>
 		</section>
 		<OurTeamWrapper id="team" class="col-12">
-		<h2 className="our-team-header">OUR TEAM</h2>
+		<OurTeamText isMobile={isMobile} className="our-team-header">OUR TEAM</OurTeamText>
 			<Team team={team}/>
 		</OurTeamWrapper>
 		</article> 
@@ -81,4 +83,15 @@ export default ({history}) => {
 
 const OurTeamWrapper = styled.div`
 padding-top:40px;
+`
+
+const OurTeamText = styled.h2`
+${({isMobile}) => isMobile && css`
+    background: lightgray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`}
+
 `

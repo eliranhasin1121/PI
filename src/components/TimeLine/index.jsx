@@ -1,5 +1,5 @@
 import React from 'react';
-import timeline from '../../assets/timeline.png';
+import timeline from '../../assets/Timeline.png';
 export default function TimeLine(){
 
     return(
