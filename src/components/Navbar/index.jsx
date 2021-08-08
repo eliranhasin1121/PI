@@ -14,13 +14,20 @@ export default function Navbar({}){
         return null;
     }
 
+    const handleContact = () => {
+        if(pathname.includes('pi-opportunities') ||pathname.includes('pi-emerging')){
+            return null;
+        }else{
+            history.push('/pi-emerging');
+        }
+    }
     return(
         <Nav isHE={isHE} className="web-nav-bar" id="nav">
         <StyledPiNovelIcon onClick={() => history.push('/')} src={location.pathname.includes('pi-opportunities') ? oppLogo : PiNovelLOGO}></StyledPiNovelIcon>
         <ul>
             <li aria-label='About Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'main'} spy={true} smooth={true}>{isHE ? 'ראשי' : 'ABOUT'}</Link></li>
             <li aria-label='Team Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'team'} spy={true} smooth={true}>{isHE ? 'צוות' : 'TEAM'}</Link></li>
-            <li aria-label='Contact Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" to={'contact'} spy={true} smooth={true}>{isHE ? 'צור קשר' : 'CONTACT'}</Link></li>
+            <li aria-label='Contact Section'><Link style={{color: isHE ? 'white' : 'black'}} className="nav-item" onClick={handleContact} to={'contact'} spy={true} smooth={true}>{isHE ? 'צור קשר' : 'CONTACT'}</Link></li>
         </ul>
     </Nav>
     )

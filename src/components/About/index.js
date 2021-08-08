@@ -1,12 +1,9 @@
-import React, { useRef } from 'react';
-import AboutIcon from '../../assets/about-logo.png'
-import {Row,Col} from 'antd';
-import PhilosophyIcon from '../../assets/Philosophy.png';
-import { StyledAbout,  StyledAboutImgSection , 
-    StyledAboutTextSection , StyledAboutText , SyledPhilosophy,Image,TextWrapper,Text,MainText } from './StyledAbout';
-    import sectionB from '../../assets/sectionB.png'
-    import useMedia from '../../customHooks/UseMedia';
-import useResize from '../../customHooks/UseResize';
+import React from 'react';
+import styled from 'styled-components';
+import AboutIcon from '../../assets/about-logo.png';
+import sectionB from '../../assets/sectionB.png';
+import useMedia from '../../customHooks/UseMedia';
+import { Image, MainText, StyledAbout, StyledAboutImgSection, StyledAboutText, StyledAboutTextSection, Text } from './StyledAbout';
 
 const About = () => {
     const {isMobile} = useMedia();
@@ -26,39 +23,62 @@ const About = () => {
                 </StyledAbout>
             </section>
 
-            <section>
-                <StyledAbout style={{backgroundColor:'rgba(211,211,211,0.4)'}} className="row">
-                <div  className="col-6 col-12-small">
-                             <Image className="image featured" style={{margin:isMobile ? 0 : '0px 0 2em 0'}} src={sectionB}></Image>
-                        </div>
-                        <div className="col-6 col-12-small">
-                           <TextWrapper>
-                             <MainText>Ahron Cohen</MainText>
-                             <Text>
-                             Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
-                             Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
-                             Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
-                             </Text>
-                          </TextWrapper>
-                        </div>
-                      
-           
-                </StyledAbout>
-            </section>
+        {!isMobile && <AharonWrapper>
+    
+                            <Image className="image featured" src={sectionB}></Image>
+    
+    <TextWrapper>
+        <MainTextWrapper>Ahron Cohen</MainTextWrapper>
+        <Text>
+        Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
+        Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
+        Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
+        </Text>
+    </TextWrapper>
+                    
+    
+        </AharonWrapper>}
+        {isMobile &&
+         <MobileAharonWrapper>
+        <MainTextWrapper>Ahron Cohen</MainTextWrapper>
+        <Text>
+                     Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
+        Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
+        Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
+        </Text>
+        </MobileAharonWrapper>
+            }
         </div>
     )
 }
 
-// <SyledPhilosophy ref={imgRef} isMobile={isMobile}>
-// <TextWrapper>
-// <MainText>Ahron Cohen</MainText>
-// <Text>
-// Mr. Cohen is the co-founder of PI Group, which was founded in 1999. Mr. Cohen is leading the business development of the group and represents the Fund with Institutional investors in Israel.  
-// Mr. Cohen has over 23 years' extensive experience in financial markets, mainly in private capital investments, Institutional investments and M&A in the public sector.
-// Prior to founding PI Group, Mr. Cohen managed the stock options desk at Mizrahi Tefahot Bank Ltd. Between 1997 to 1999 Mr. Cohen was a senior Vice President at Clal finance Ltd, where he oversaw the proprietary and derivatives trading desks.
-// </Text>
-// </TextWrapper>
-// </SyledPhilosophy>
+
+const AharonWrapper = styled(StyledAbout)`
+padding:50px 0px;
+`
+
+const TextWrapper = styled.div`
+    width: 60%;
+    background-color: #D8D8D8;
+    opacity: 0.6;
+    position: relative;
+    width: 30%;
+    position: relative;
+    top: -815px;
+    margin-right: 15%;
+    height: 751px;
+    left: 65%;
+`
 
 
+const MainTextWrapper = styled(MainText)`
+
+padding-top:20px;
+
+`
 export default About;
+
+const MobileAharonWrapper = styled.div`
+background-color: #D8D8D8;
+padding:20px;
+`
